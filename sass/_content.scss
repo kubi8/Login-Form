@@ -1,0 +1,242 @@
+.wrapper{
+    @include center;
+    flex-direction: column;
+    border: 1px solid $dark;
+    max-width: 1000px;
+    padding: 10px;
+    background: $backgr;
+    &__title{
+        user-select: none;
+    }
+    &__subtitle{
+        font-weight: 300;
+        user-select: none;
+    }
+    .content{
+        padding: 20px;
+        min-width: 320px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        .signup{
+            border: 2px solid $backg;
+            max-width: 350px;
+            margin: 0 0 20px 0;
+            padding: 10px;
+            text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            &__title{
+                width: 100%;
+                user-select: none;
+            }
+            &__first-name{
+                width: 142px;
+                padding: 5px;
+                margin: 5px;
+                &:focus{
+                    outline: 2px solid $sign;
+                    font-style: italic;
+                    background: $signback;
+                }
+                @media (max-width: 455px){
+                    width: 90%;
+                }
+            }
+            &__last-name{
+                width: 142px;
+                padding: 5px;
+                margin: 5px;
+                &:focus{
+                    outline: 2px solid $sign;
+                    font-style: italic;
+                    background: $signback;
+                }
+                @media (max-width: 455px){
+                    width: 90%;
+                }
+            }
+            &__username{
+                width: 90%;
+                padding: 5px;
+                margin: 5px;
+                &:focus{
+                    outline: 2px solid $sign;
+                    font-style: italic;
+                    background: $signback;
+                }
+            }
+            &__email{
+                width: 90%;
+                padding: 5px;
+                margin: 5px;
+                &:focus{
+                    outline: 2px solid $sign;
+                    font-style: italic;
+                    background: $signback;
+                }
+            }
+            &__password{
+                width: 90%;
+                padding: 5px;
+                margin: 5px;
+                &:focus{
+                    outline: 2px solid $sign;
+                    font-style: italic;
+                    background: $signback;
+                }
+            }
+            &__label{
+                position: relative;
+                cursor: pointer;
+                user-select: none;
+                transition: all .4s;
+                &--link{
+                    color: $dark;
+                    font-style: italic;
+                    &:hover{
+                        font-style: italic;
+                        color: $signbor;
+                    }
+                }
+                &:hover{
+                    color: $sign;
+                }
+            }
+            &__checkbox{
+                position: absolute;
+                cursor: pointer;
+                opacity: 0;
+            }
+            &__span-text{
+                position: absolute;
+                top: 0;
+                left: -30px;
+                height: 20px;
+                width: 20px;
+                border: 1px solid $sign;
+                border-radius: 5px;
+
+                &::before{
+                    content: "";
+                    position: absolute;
+                    width: 10px;
+                    height: 10px;
+                    background: $sign;
+                    top: 4px;
+                    left: 4px;
+                    border-radius: 3px;
+                    display: none;
+                }
+            }
+            &__submit{
+                width: 40%;
+                padding: 5px;
+                margin: 5px;
+                background: $sign;
+                color: $backgr;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                position: relative;
+                &--cover{
+                    position: absolute;
+                    width: 140px;
+                    height: 30px;
+                    top: 500px;
+                    border: 1px solid ;
+                    background: $light;
+                    opacity: .7;
+                    filter: blur(10px);
+                }
+                &:focus{
+                    outline: 2px solid $signbor;
+                    outline-offset: 1px;
+                }
+            }
+            &__text{
+                margin: 5px 0;
+                font-weight: 300;
+                font-size: .8rem;
+                user-select: none;
+                &--link{
+                    text-decoration: none;
+                    color: $sign;
+                }
+            }
+            @media (min-width: 784px){
+                margin: 0 20px 20px 0;
+            }
+        }
+        .login{
+            border: 2px solid $backg;
+            max-width: 350px;
+            padding: 10px;
+            height: 200px;
+            text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-start;
+            &__title{
+                width: 100%;
+                user-select: none;
+            }
+            &__email{
+                width: 90%;
+                padding: 5px;
+                margin: 5px;
+                &:focus{
+                    outline: 2px solid $log;
+                    font-style: italic;
+                    background: $logback;
+                }
+            }
+            &__password{
+                width: 90%;
+                padding: 5px;
+                margin: 5px;
+                &:focus{
+                    outline: 2px solid $log;
+                    font-style: italic;
+                    background: $logback;
+                }
+            }
+            &__submit{
+                width: 40%;
+                padding: 5px;
+                margin: 5px;
+                background: $log;
+                color: $backgr;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                &:focus{
+                    outline: 2px solid $logbor;
+                    outline-offset: 1px;
+                }
+            }
+            &__text{
+                margin: 5px 0;
+                font-weight: 300;
+                font-size: .8rem;
+                user-select: none;
+                &--link{
+                    text-decoration: none;
+                    color: $log;
+                }
+            }
+        }
+    }
+}
+.active{
+    display: none;
+}
+.footer-form{
+    text-align: center;
+}
+.signup__checkbox:checked~.signup__span-text::before{
+    display: inline-block;
+}
