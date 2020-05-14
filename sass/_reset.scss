@@ -7,7 +7,11 @@ html{
     padding: 0;
 }
 body{
-    @include center;
-    padding: 200px 20px 0 20px;
-    font-family: 'Roboto', sans-serif
+    @include column;
+    min-height: 100vh;
+    padding: 0 0 80px 0;
+    font-family: 'Roboto', sans-serif;
+    @media(max-width: 784px) {
+        padding: 0;
+    }
 }
