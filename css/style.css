@@ -172,12 +172,12 @@ body {
   width: 142px;
   padding: 5px;
   margin: 5px;
+  outline: none;
 }
 
 .wrapper .content .signup__first-name:focus {
-  outline: 2px solid #f89b57;
   font-style: italic;
-  background: #fff3ea;
+  background: #ffc69a;
 }
 
 @media (max-width: 455px) {
@@ -190,12 +190,12 @@ body {
   width: 142px;
   padding: 5px;
   margin: 5px;
+  outline: none;
 }
 
 .wrapper .content .signup__last-name:focus {
-  outline: 2px solid #f89b57;
   font-style: italic;
-  background: #fff3ea;
+  background: #ffc69a;
 }
 
 @media (max-width: 455px) {
@@ -208,36 +208,36 @@ body {
   width: 90%;
   padding: 5px;
   margin: 5px;
+  outline: none;
 }
 
 .wrapper .content .signup__username:focus {
-  outline: 2px solid #f89b57;
   font-style: italic;
-  background: #fff3ea;
+  background: #ffc69a;
 }
 
 .wrapper .content .signup__email {
   width: 90%;
   padding: 5px;
   margin: 5px;
+  outline: none;
 }
 
 .wrapper .content .signup__email:focus {
-  outline: 2px solid #f89b57;
   font-style: italic;
-  background: #fff3ea;
+  background: #ffc69a;
 }
 
 .wrapper .content .signup__password {
   width: 90%;
   padding: 5px;
   margin: 5px;
+  outline: none;
 }
 
 .wrapper .content .signup__password:focus {
-  outline: 2px solid #f89b57;
   font-style: italic;
-  background: #fff3ea;
+  background: #ffc69a;
 }
 
 .wrapper .content .signup__label {
@@ -358,10 +358,10 @@ body {
   width: 90%;
   padding: 5px;
   margin: 5px;
+  outline: none;
 }
 
 .wrapper .content .login__email:focus {
-  outline: 2px solid #7fdc30;
   font-style: italic;
   background: #eeffdf;
 }
@@ -370,10 +370,10 @@ body {
   width: 90%;
   padding: 5px;
   margin: 5px;
+  outline: none;
 }
 
 .wrapper .content .login__password:focus {
-  outline: 2px solid #7fdc30;
   font-style: italic;
   background: #eeffdf;
 }
